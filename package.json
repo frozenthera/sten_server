@@ -1,0 +1,29 @@
+{
+  "name": "stencilight-rank-server",
+  "version": "1.0.0",
+  "description": "1. node.js 설치\r 2. node.js 초기화",
+  "main": "index.js",
+  "homepage" : "https://frozenthera.github.io/sten_server/",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./build/index.js",
+    "build": "tsc -p .",
+    "dev": "nodemon ./src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "@types/sqlite3": "^3.1.11",
+    "express": "^4.21.1",
+    "gh-pages": "^6.2.0",
+    "nodemon": "^3.1.7",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
